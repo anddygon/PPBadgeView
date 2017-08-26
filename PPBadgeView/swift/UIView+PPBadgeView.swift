@@ -21,7 +21,7 @@ import UIKit
 
 private var kBadgeLabel = "kBadgeLabel"
 
-public struct PP<Base> {
+public struct CV<Base> {
     public let base: Base
     public init(_ base: Base) {
         self.base = base
@@ -29,13 +29,13 @@ public struct PP<Base> {
 }
 
 public extension UIView {
-    public var pp: PP<UIView> {
-        return PP(self)
+    public var cv: CV<UIView> {
+        return CV(self)
     }
 }
 
 // MARK: - add Badge
-public extension PP where Base: UIView {
+public extension CV where Base: UIView {
     
     /// 添加带文本内容的Badge, 默认右上角, 红色, 18pts 
     ///
