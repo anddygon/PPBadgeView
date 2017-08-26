@@ -25,20 +25,20 @@ class PPViewController1: UIViewController {
         
         // 1.给UIBarButtonItem添加badge
         // 1.1 左边
-        self.navigationItem.leftBarButtonItem?.pp.addBadge(number: 1);
+        self.navigationItem.leftBarButtonItem?.cv.addBadge(number: 1);
         // 调整badge大小
-//        self.navigationItem.leftBarButtonItem?.pp.setBadgeHeight(points: 21.0);
+//        self.navigationItem.leftBarButtonItem?.cv.setBadgeHeight(points: 21.0);
         // 调整badge的位置
-//        self.navigationItem.leftBarButtonItem?.pp.moveBadge(x: -7, y: 5)
+//        self.navigationItem.leftBarButtonItem?.cv.moveBadge(x: -7, y: 5)
         // 自定义badge的属性: 字体大小/颜色, 背景颜色...(默认系统字体13,白色,背景色为系统badge红色)
-        self.navigationItem.leftBarButtonItem?.pp.setBadgeLabel(attributes: { (badgeLabel) in
+        self.navigationItem.leftBarButtonItem?.cv.setBadgeLabel(attributes: { (badgeLabel) in
             // badgeLabel.font = UIFont.systemFont(ofSize: 13)
             // badgeLabel.textColor = UIColor.blue
         })
         
         // 1.2 右边
-        self.navigationItem.rightBarButtonItem?.pp.addDot(color: nil);
-//        self.navigationItem.rightBarButtonItem?.pp.moveBadge(x: -5, y: 0);
+        self.navigationItem.rightBarButtonItem?.cv.addDot(color: nil);
+//        self.navigationItem.rightBarButtonItem?.cv.moveBadge(x: -5, y: 0);
     }
     
     func setupViews() {
@@ -49,10 +49,10 @@ class PPViewController1: UIViewController {
     }
     
     @objc fileprivate func deleteNum() {
-        self.navigationItem.leftBarButtonItem?.pp.decrease()
+        self.navigationItem.leftBarButtonItem?.cv.decrease()
     }
     @objc fileprivate func addNum() {
-        self.navigationItem.leftBarButtonItem?.pp.increase()
+        self.navigationItem.leftBarButtonItem?.cv.increase()
     }
     
 }
